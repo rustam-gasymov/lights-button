@@ -10,7 +10,7 @@ export const Increment = () => {
   console.log("dispatch");
 
   const handleClick = () => {
-    console.log("helloccccc world");
+    console.log("hiiiiii");
     dispatch(setIncrementValue());
   };
 
