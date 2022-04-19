@@ -9,7 +9,7 @@ export const configureToolsSlice = createSlice({
     setIncrementValue: (state) => {
       console.log("increment");
 
-      state.value = state.value - 1;
+      state.value = state.value + 10;
     },
   },
   extraReducers: {},
