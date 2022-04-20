@@ -1,11 +1,7 @@
-// import css from "./increment.css";
-// import style from "./style.css";
-// import { css } from "./increment.css";
 import { useAppDispatch, useAppSelector } from "../../app";
 //@ts-ignore
-// import { reducers } from "@test/state";
-import "./increment.css";
 import { setIncrementValue } from "./IncrementSlice";
+import "./increment.css";
 
 // const { setIncrementValue } = reducers;
 // export { setIncrementValue };
