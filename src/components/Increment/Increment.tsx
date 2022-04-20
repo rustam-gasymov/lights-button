@@ -1,6 +1,7 @@
 import "./increment.css";
 import { useAppDispatch, useAppSelector } from "../../app";
-import { setIncrementValue } from "../../features/counter/counterSlice";
+//@ts-ignore
+import { setIncrementValue } from "@test/state";
 
 export const Increment = () => {
   const state = useAppSelector((state) => state);

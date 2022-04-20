@@ -1,10 +1,8 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import { configureToolsSlice } from "../features/counter/counterSlice";
+// import { configureToolsSlice } from "../features/counter/counterSlice";
 
 export const store = configureStore({
-  reducer: {
-    configureTools: configureToolsSlice.reducer,
-  },
+  reducer: {},
 });
 
 export type AppDispatch = typeof store.dispatch;
