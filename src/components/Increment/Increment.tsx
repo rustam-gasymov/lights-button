@@ -3,11 +3,12 @@
 // import { css } from "./increment.css";
 import { useAppDispatch, useAppSelector } from "../../app";
 //@ts-ignore
-import { reducers } from "@test/state";
+// import { reducers } from "@test/state";
 import "./increment.css";
+import { setIncrementValue } from "./IncrementSlice";
 
-const { setIncrementValue } = reducers;
-export { setIncrementValue };
+// const { setIncrementValue } = reducers;
+// export { setIncrementValue };
 
 export const Increment = () => {
   const state = useAppSelector((state) => state);
