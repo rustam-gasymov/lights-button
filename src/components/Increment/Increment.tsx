@@ -1,10 +1,9 @@
 import { useAppDispatch, useAppSelector } from "../../app";
 //@ts-ignore
 import { setIncrementValue } from "./IncrementSlice";
+//@ts-ignore
+import { setDecrementValue } from "decrement-button";
 import "./increment.css";
-
-// const { setIncrementValue } = reducers;
-// export { setIncrementValue };
 
 export const Increment = () => {
   const state = useAppSelector((state) => state);
@@ -16,7 +15,7 @@ export const Increment = () => {
   const handleClick = () => {
     console.log("hiiiiii99999333333");
     dispatch(setIncrementValue());
-    // dispatch(setDecrementValue(10));
+    dispatch(setDecrementValue(10000));
   };
 
   return (
