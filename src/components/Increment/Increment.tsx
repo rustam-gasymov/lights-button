@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from "../../app";
 import { setIncrementValue, setDecrementValue } from "@test/state";
 import "./increment.css";
 
-export { setIncrementValue, setDecrementValue };
+// export { setIncrementValue, setDecrementValue };
 
 export const Increment = () => {
   const state = useAppSelector((state) => state);
