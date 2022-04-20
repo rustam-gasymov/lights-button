@@ -1,7 +1,12 @@
-import "./increment.css";
+// import css from "./increment.css";
+// import style from "./style.css";
+// import { css } from "./increment.css";
 import { useAppDispatch, useAppSelector } from "../../app";
 //@ts-ignore
-import { setIncrementValue } from "@test/state";
+import { setIncrementValue, setDecrementValue } from "@test/state";
+import "./increment.css";
+
+export const setIncrement = setIncrementValue;
 
 export const Increment = () => {
   const state = useAppSelector((state) => state);
@@ -13,6 +18,7 @@ export const Increment = () => {
   const handleClick = () => {
     console.log("hiiiiii99999333333");
     dispatch(setIncrementValue());
+    dispatch(setDecrementValue(10));
   };
 
   return (

@@ -8,7 +8,12 @@ import { babel } from "@rollup/plugin-babel";
 import pkg from "./package.json";
 
 const plugins = [
-  styles(),
+  styles({
+    modules: true,
+    autoModules: true,
+    autoModules: /\.mod\.\S+$/,
+    autoModules: (id) => id.includes(".modular."),
+  }),
   typescript(),
   peerDepsExternal({ includeDependencies: true }),
   multi(),
