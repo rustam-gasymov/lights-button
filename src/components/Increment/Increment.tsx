@@ -1,8 +1,7 @@
 import { useAppDispatch, useAppSelector } from "../../app";
 import { setDecrementValue } from "decrement-button";
 import { setIncrementValue } from "./IncrementSlice";
-//@ts-ignore
-import classes from "./Increment.module.css";
+import "./Increment.css";
 
 export const Increment = () => {
   const state = useAppSelector((state) => state);
@@ -18,7 +17,7 @@ export const Increment = () => {
   };
 
   return (
-    <button className={classes.btn} onClick={handleClick}>
+    <button className="btn" onClick={handleClick}>
       Increment
     </button>
   );

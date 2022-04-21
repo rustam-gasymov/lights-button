@@ -1,5 +1,5 @@
-/* src/components/Increment/Increment.module.css */
-.mcee096bd8_btn {
+/* src/components/Increment/Increment.css */
+.mcbde38246_btn {
   border-radius: 5px;
   padding: 8px 16px;
   background: rgb(109, 124, 253);
@@ -10,7 +10,7 @@
   color: white;
 }
 
-.mcee096bd8_btn:hover {
+.mcbde38246_btn:hover {
   background: rgb(66, 84, 245);
   color: white;
 }
