@@ -1,4 +1,4 @@
 import { Increment } from "./Increment";
-import IncrementSlice, { setIncrementValue } from "./IncrementSlice";
+import { incrementSlice, setIncrementValue } from "./IncrementSlice";
 
-export { Increment, setIncrementValue, IncrementSlice };
+export { Increment, setIncrementValue, incrementSlice };

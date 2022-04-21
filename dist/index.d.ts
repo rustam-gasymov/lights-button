@@ -1,11 +1,15 @@
-import * as redux from 'redux';
 import * as _reduxjs_toolkit from '@reduxjs/toolkit';
+import * as immer_dist_internal from 'immer/dist/internal';
 
 declare const Increment: () => JSX.Element;
 
-declare const setIncrementValue: _reduxjs_toolkit.ActionCreatorWithoutPayload<string>;
-declare const _default: redux.Reducer<{
+declare const incrementSlice: _reduxjs_toolkit.Slice<{
     value: number;
-}, redux.AnyAction>;
+}, {
+    setIncrementValue: (state: immer_dist_internal.WritableDraft<{
+        value: number;
+    }>) => void;
+}, "increment">;
+declare const setIncrementValue: _reduxjs_toolkit.ActionCreatorWithoutPayload<string>;
 
-export { Increment, _default as IncrementSlice, setIncrementValue };
+export { Increment, incrementSlice, setIncrementValue };
