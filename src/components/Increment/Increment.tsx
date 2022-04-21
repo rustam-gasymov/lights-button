@@ -1,9 +1,7 @@
 import { useAppDispatch, useAppSelector } from "../../app";
-//@ts-ignore
-import { setIncrementValue } from "./IncrementSlice";
-//@ts-ignore
 import { setDecrementValue } from "decrement-button";
-import "./increment.css";
+import { setIncrementValue } from "./IncrementSlice";
+import "./Increment.css";
 
 export const Increment = () => {
   const state = useAppSelector((state) => state);

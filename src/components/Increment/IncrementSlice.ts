@@ -8,11 +8,9 @@ export const incrementSlice = createSlice({
   reducers: {
     setIncrementValue: (state) => {
       console.log("setIncrementValue new state");
-
       state.value++;
     },
   },
-  extraReducers: {},
 });
 
 export const { setIncrementValue } = incrementSlice.actions;
